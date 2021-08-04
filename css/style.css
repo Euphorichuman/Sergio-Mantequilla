@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'stafford-serial-heavy';
+    src: url("../source/stafford-serial-heavy-regular.ttf") format("truetype");
+}
+body {
+    height:100vh; 
+    margin:0; 
+    display: flex;
+    flex-direction:column; 
+    font-family: 'stafford-serial-heavy', sans-serif;
+    background-color: #D5EAEF;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+header .tittle {
+    color: #496f98;
+    font-size:50px;
+    cursor:pointer;
+
+
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#scene{
+    align-items: center;
+    
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(73,111,152,0.5);;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 100px;
+    color: #D5EAEF;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #496f98;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav .content {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+footer {
+    margin-top: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+
+    color: #496f98;
+    font-size:20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #496f98;
+}
